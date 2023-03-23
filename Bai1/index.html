@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module1-Test-PM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="feedbackMain">
+        <div id="feedbackEditor">
+            <p id="question">Thầy Phú dạy anh em có hay ko ?</p>
+            <div id="star_container">
+                <span id="star_1" class="star" onclick="returnStarNumber()">
+                    1
+                </span>
+                <span id="star_2" class="star" onclick="returnStarNumber()">
+                    2
+                </span>
+                <span id="star_3" class="star" onclick="returnStarNumber()">
+                    3
+                </span>
+                <span id="star_4" class="star" onclick="returnStarNumber()">
+                    4
+                </span>
+                <span id="star_5" class="star" onclick="returnStarNumber()">
+                    5
+                </span>
+                <span id="star_6" class="star" onclick="returnStarNumber()">
+                    6
+                </span>
+                <span id="star_7" class="star" onclick="returnStarNumber()">
+                    7
+                </span>
+                <span id="star_8" class="star" onclick="returnStarNumber()">
+                    8
+                </span>
+                <span id="star_9" class="star" onclick="returnStarNumber()">
+                    9
+                </span>
+                <span id="star_10" class="star" onclick="returnStarNumber()">
+                    10
+                </span>
+            </div>
+            <input id="commentEditor" type="text" placeholder="Write a review">
+            <input id="commentSendBtn" onclick="addReviewBtn()" type="button" value="Send">
+        </div>
+        <div id="summary">
+            <p id="reviewAmount"></p>
+            <p id="starAverage"></p>
+        </div>
+        <div id="reviewContainer">
+            <!-- <div class="reviewItem">
+                <i class="themify_icon ti-pencil-alt"></i>
+                <i class="themify_icon ti-close"></i>
+                Review
+            </div> -->
+           
+
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

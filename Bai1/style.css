@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#feedbackMain{
+
+}
+
+#feedbackEditor{
+
+}
+#feedbackEditor #star_container{
+    display: flex;
+    column-gap: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#feedbackEditor #star_container .star{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+}
+#feedbackEditor #star_container .star:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+/*  */
+#feedbackMain #summary{
+    display: flex;
+    column-gap: 50%;
+}
+#feedbackMain #summary #reviewAmount{
+    margin-left: 10px;
+}
+/*  */
+#reviewContainer .reviewItem{
+    border: 1px solid red;
+    margin: 10px;
+    position: relative;
+    height: 70px;
+}
+#reviewContainer >.reviewItem >.themify_icon,.star2{
+    position: absolute;
+}
+#reviewContainer .reviewItem .ti-close{
+    right: 0;
+    cursor: pointer;
+}
+#reviewContainer .reviewItem .ti-pencil-alt{
+    right: 20px;
+    cursor: pointer;
+}
+#reviewContainer > .reviewItem > .star2{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    top: 30px;
+    background-color: orange;
+}
+
