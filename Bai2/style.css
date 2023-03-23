@@ -18,8 +18,14 @@
     text-align: center;
 }
 #mainContainer #boardHead #startReset{
-    
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
 }
+#mainContainer #boardHead #startReset #countTime{
+    text-align: center;
+}
+
 
 /*  */
 #mainContainer > #boardMainBody .bodyItem{

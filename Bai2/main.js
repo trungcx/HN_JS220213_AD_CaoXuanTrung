@@ -1,5 +1,34 @@
 let listPlayer = JSON.parse(localStorage.getItem('listPlayer'));
+let stopFlag = false;
+// Start Reset
+var intervalTime;
+function startStopBtn(){
+    if(stopFlag == false){
+        intervalTime = setInterval(displayTime, 1000);
+        stopFlag = true;
+        document.getElementById('startBtn').innerHTML = `STOP`;
+    } else{
 
+    
+    }
+}
+function displayTime(){
+    let countTime = document.getElementById('countTime');
+    countTime.innerHTML++;
+}
+
+function resetBtn(){
+    listPlayer = JSON.parse(localStorage.getItem('listPlayer'));
+    clearInterval(intervalTime);
+    countTime.innerHTML = `0`;
+    for(let i in listPlayer){
+        listPlayer[i].score = 0;
+    }
+    localStorage.setItem('listPlayer', JSON.stringify(listPlayer));
+    displayPlayer();
+}
+
+//Add player
 function addPlayerBtn_fnt() {
     let inputPlayer = document.getElementById('playerNameInput').value;
 
