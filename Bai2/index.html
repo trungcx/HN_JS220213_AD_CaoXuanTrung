@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rikkei scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <h3>HN_JS220213_AD_CaoXuanTrung</h3>
+    <div id="mainContainer">
+        <div id="boardHead">
+            <div id="summary">
+                <p id="totalPlayer"></p>
+                <p id="totalPoint"></p>
+            </div>
+            <div id="gameName">
+                Rikkei Scoreboard
+            </div>
+            <div id="startReset">
+                <p>Stopwatch</p>
+                <p ></p>
+                <div id="startResetBtn">
+                    <input id="startBtn" type="button" value="START" onclick="startBtn()">
+                    <input id="resetBtn" type="button" value="RESET" onclick="resetBtn()">
+                </div>
+            </div>
+        </div>
+        <div id="boardMainBody">
+            <div class="bodyItem">
+                <i class="myIcon ti-close"></i>
+                <i class="myIcon ti-crown"></i>
+                <p class="playerName"></p>
+                <i class="myIcon ti-minus" onclick="minusScore()"></i>
+                <span class="score"></span>
+                <i class="myIcon ti-plus" onclick="plusScore()"></i>
+            </div>
+        </div>
+        <div id="boardAddPlayer">
+            <input id="playerNameInput" type="text" placeholder="Write a name player">
+            <input id="addPlayerBtn" onclick="addPlayerBtn_fnt()" type="button" value="Add Player">
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
