@@ -3,14 +3,7 @@ let stopFlag = false;
 // Start Reset
 var intervalTime;
 function startStopBtn(){
-    if(stopFlag == false){
-        intervalTime = setInterval(displayTime, 1000);
-        stopFlag = true;
-        document.getElementById('startBtn').innerHTML = `STOP`;
-    } else{
-
-    
-    }
+    intervalTime = setInterval(displayTime, 1000);
 }
 function displayTime(){
     let countTime = document.getElementById('countTime');
